@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/content-container.css">
+    <link rel="stylesheet" href="./css/snb.css">
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+</head>
+
+<style>
+    .market-overview textarea {
+        width: 100%;
+        height: 150px;
+        resize: none;
+        border-radius: 0 0 20px 0;
+        margin: 20px 0;
+        border: 3px solid #ECE2EE;
+        padding: 15px 20px;
+        outline: none;
+        font-size: 16px;
+    }
+
+    .tam-sam-som-title {
+        padding-left: 23px;
+    }
+
+    .tam-sam-som-img {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .target-market-setting-wrapper {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .target-market-setting-box {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border: 2px solid #ECE2EE;
+        border-radius: 5px;
+        padding: 10px 15px;
+        margin-top: 10px;
+        flex: 1;
+        width: 100%;
+    }
+
+    .target-market-setting-box:first-child {
+        flex: 2;
+    }
+
+    .target-market-text p {
+        color: #A84EA4;
+    }
+
+    .target-market-text input {
+        background: #f2f2f2;
+        border: none;
+        height: 45px;
+        outline: none;
+        padding: 0 15px;
+        margin-top: 5px;
+    }
+</style>
+
+<body>
+    <div class="bmds-container">
+        <div class="section-nav-bar">
+            <div class="nav-title-box">
+                <nav>
+                    <div class="nav-title">
+                        <p>The Scalable Business Model Design</p>
+                    </div>
+                    <ul>
+                        <li>
+                            마켓 인사이트
+                        </li>
+                        <li>
+                            고객/문제 정의
+                        </li>
+                        <li>
+                            기존 대안 분석
+                        </li>
+                        <li>
+                            해결안
+                        </li>
+                        <li>
+                            가치 선정
+                        </li>
+                        <li>
+                            핵심 자원
+                        </li>
+                        <li>
+                            핵심 파트너
+                        </li>
+                        <li>
+                            핵심 활동
+                        </li>
+                        <li>
+                            수익모델
+                        </li>
+                        <li>
+                            고객 경험 설계
+                        </li>
+                        <li>
+                            피드백
+                        </li>
+                    </ul>
+                    <div class="empty-box"></div>
+                </nav>
+            </div>
+        </div>
+        <div class="content-container">
+            <div class="content-header">
+                <div class="content-section-number">
+                    <img src="./img/section-01/title-01.png" alt="">
+                </div>
+                <div class="content-header-right">
+                    <div class="bmds-logo">
+                        <img src="./img/common/img_logo.png" alt="">
+                    </div>
+                    <p class="content-section-en-title">Market Insight</p>
+                    <p class="content-section-title">1&#41; 시장정의</p>
+                    <div class="description">
+                        <p>제품(서비스)의 시장에 대해 간략히 서술하고, 해당 시장의 시장 규모와 시장의 성장성을 파악합니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-wrapper">
+                <div class="market-overview">
+                    <textarea placeholder="● 시장개요"></textarea>
+                </div>
+                <div class="tam-sam-som">
+                    <span class="tam-sam-som-title">● TAM-SAM-SOM 정의</span>
+                    <div class="tam-sam-som-img">
+                        <img src="./img/section-01/img_07.png" alt="">
+                    </div>
+                </div>
+                <div class="tam-sam-som">
+                    <span class="tam-sam-som-title">● 목표시장 설정 </span>
+                    <div class="target-market-setting-wrapper">
+                        <div class="target-market-setting-box">
+                            <div class="target-market-icon">
+                                <img src="./img/section-01/07_icon_01.png" alt="">
+                            </div>
+                            <div class="target-market-text" style="width: 100%;">
+                                <p>시장 정의</p>
+                                <input type="text" style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="target-market-setting-box">
+                            <div class="target-market-icon">
+                                <img src="./img/section-01/07_icon_02.png" alt="">
+                            </div>
+                            <div class="target-market-text">
+                                <p>시장 규모</p>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="target-market-setting-box">
+                            <div class="target-market-icon">
+                                <img src="./img/section-01/07_icon_03.png" alt="">
+                            </div>
+                            <div class="target-market-text">
+                                <p>시장 분류</p>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="target-market-setting-box">
+                            <div class="target-market-icon">
+                                <img src="./img/section-01/07_icon_04.png" alt="">
+                            </div>
+                            <div class="target-market-text">
+                                <p>평균 성장률</p>
+                                <input type="text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

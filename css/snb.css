@@ -1,0 +1,30 @@
+.section-nav-bar {
+  background: #e7e6e6;
+  width: 200px;
+  height: 100%;
+}
+.nav-title-box {
+  padding: 30px 20px;
+  height: 100%;
+}
+
+.nav-title-box .nav-title {
+  color: #8d8d8d;
+  font-weight: bold;
+}
+
+.nav-title-box nav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.nav-title-box nav ul li {
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+  background: #fff;
+  color: #aeaeae;
+}
