@@ -17,23 +17,20 @@ ul {
 }
 
 img {
-  max-width: 100%;
+  /* max-width: 100%; */
 }
 
 body {
   display: flex;
   justify-content: center;
-  /* align-items: center;
-  height: 100vh; */
 }
 
 .bmds-container {
-  width: 1440px;
+  width: 1600px;
   display: flex;
   border: 1px solid #e7e6e6;
 }
 
 .content-wrapper {
   width: 100%;
-  padding: 0 20px;
 }
