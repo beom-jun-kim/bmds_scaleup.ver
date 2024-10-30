@@ -26,7 +26,8 @@ table {
   border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
   border: 1px solid #d1d1d1;
 }
 
@@ -43,4 +44,14 @@ body {
 
 .content-wrapper {
   width: 100%;
+}
+
+.common-title-box {
+  color: #a84ea4;
+  font-size: 20px;
+  text-align: center;
+  height: 50px;
+  line-height: 48px;
+  border: 2px solid #a84ea4;
+  background: #fff;
 }
