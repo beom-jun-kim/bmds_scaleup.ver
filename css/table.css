@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+.table-checkbox {
+  width: 100%;
+  border: 1px solid #d1d1d1;
+  border-collapse: collapse;
+}
+
+.table-checkbox th,
+.table-checkbox td {
+  border: 1px solid #d1d1d1;
+}
+
+.table-checkbox tr td {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 300;
+}

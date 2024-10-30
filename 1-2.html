@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/content-container.css">
     <link rel="stylesheet" href="./css/snb.css">
     <link rel="stylesheet" href="./css/checkbox.css">
+    <link rel="stylesheet" href="./css/table.css">
     <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
 
 </head>
@@ -23,15 +24,7 @@
         margin-bottom: 20px;
     }
 
-    .life-cycle-checkbox tr td {
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-weight: 300;
-    }
-
-    .life-cycle-checkbox tr td:first-child {
+    .life-cycle-table tr td:first-child {
         text-align: center;
         background: #e7e6e6;
         font-weight: 400;
@@ -105,126 +98,124 @@
                     <!-- ======== content start ======== -->
                     <div class="content-wrapper">
                         <div class="life-cycle-graph">그래프</div>
-                        <div class="life-cycle-checkbox">
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td>고객</td>
-                                        <td>
-                                            <input type="radio" id="innovation" name="cust" checked>
-                                            <label for="innovation">혁신층</label>
-                                        </td>
-                                        <td>
-                                            <input type="radio" id="earlyAcceptance" name="cust">
-                                            <label for="earlyAcceptance">조기 수용층</label>
-                                        </td>
-                                        <td>
-                                            <input type="radio" id="multitude" name="cust">
-                                            <label for="multitude">다수층</label>
-                                        </td>
-                                        <td>
-                                            <input type="radio" id="naturalAcceptance" name="cust">
-                                            <label for="naturalAcceptance">자연수용층</label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>경쟁도</td>
-                                        <td>
-                                            <input type="radio" id="awarProd" name="compet" checked>
-                                            <label for="awarProd">제품의 인지</label>
-                                        </td>
-                                        <td>
-                                            <input type="radio" id="startCompet" name="compet">
-                                            <label for="startCompet">시장 확대, 경쟁 시작</label>
-                                        </td>
-                                        <td>
-                                            <input type="radio" id="perfectCompet" name="compet">
-                                            <label for="perfectCompet">완전 경쟁</label>
-                                        </td>
-                                        <td>
-                                            <input type="radio" id="cutthroatCompet" name="compet">
-                                            <label for="cutthroatCompet">치열한 경쟁</label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>전략</td>
-                                        <td>
-                                            <input type="radio" id="deficit" name="stra" checked>
-                                            <label for="deficit">적자 ▶ 제품 관리 집중</label>
-                                        </td>
-                                        <td>
-                                            <input type="radio" id="increProf" name="stra">
-                                            <label for="increProf">매출/이익 증가 ▶ 광고시작</label>
-                                        </td>
-                                        <td>
-                                            <input type="radio" id="declProf" name="stra">
-                                            <label for="declProf">매출/이익 감소 ▶ 홍보활동 강화</label>
-                                        </td>
-                                        <td>
-                                            <input type="radio" id="exitStra" name="stra">
-                                            <label for="exitStra">출구전략</label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>특성</td>
-                                        <td>
-                                            <input type="radio" id="basicFuncProd" name="char" checked>
-                                            <label for="basicFuncProd">기본 기능 제품</label>
-                                        </td>
-                                        <td>
-                                            <input type="radio" id="addFeatServ" name="char">
-                                            <label for="addFeatServ">기능 및 서비스 추가</label>
-                                        </td>
-                                        <td>
-                                            <input type="radio" id="ProdDiff" name="char">
-                                            <label for="ProdDiff">제품/서비스 차별화</label>
-                                        </td>
-                                        <td>
-                                            <input type="radio" id="quanDiff" name="char">
-                                            <label for="quanDiff">수량 차별화(1+1)</label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>가격</td>
-                                        <td>
-                                            <input type="radio" id="highPrice" name="price" checked>
-                                            <label for="highPrice">고가격</label>
-                                        </td>
-                                        <td>
-                                            <input type="radio" id="priceAdju" name="price">
-                                            <label for="priceAdju">가격 조정</label>
-                                        </td>
-                                        <td>
-                                            <input type="radio" id="priceDisc" name="price">
-                                            <label for="priceDisc">가격 할인</label>
-                                        </td>
-                                        <td>
-                                            <input type="radio" id="priceDumping" name="price">
-                                            <label for="priceDumping">가격 덤핑</label>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>유통망</td>
-                                        <td>
-                                            <input type="radio" id="smallDistNetw" name="distNetw" checked>
-                                            <label for="smallDistNetw">적은 유통망</label>
-                                        </td>
-                                        <td>
-                                            <input type="radio" id="incrDistNetw" name="distNetw">
-                                            <label for="incrDistNetw">유통망 증대</label>
-                                        </td>
-                                        <td>
-                                            <input type="radio" id="secgMuleDisnNetw" name="distNetw">
-                                            <label for="secgMuleDisnNetw">유통망 다수 확보</label>
-                                        </td>
-                                        <td>
-                                            <input type="radio" id="reduDistNetw" name="distNetw">
-                                            <label for="reduDistNetw">유통망 축소</label>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        <table class="life-cycle-table table-checkbox">
+                            <tbody>
+                                <tr>
+                                    <td>고객</td>
+                                    <td>
+                                        <input type="radio" id="innovation" name="cust" checked>
+                                        <label for="innovation">혁신층</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" id="earlyAcceptance" name="cust">
+                                        <label for="earlyAcceptance">조기 수용층</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" id="multitude" name="cust">
+                                        <label for="multitude">다수층</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" id="naturalAcceptance" name="cust">
+                                        <label for="naturalAcceptance">자연수용층</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>경쟁도</td>
+                                    <td>
+                                        <input type="radio" id="awarProd" name="compet" checked>
+                                        <label for="awarProd">제품의 인지</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" id="startCompet" name="compet">
+                                        <label for="startCompet">시장 확대, 경쟁 시작</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" id="perfectCompet" name="compet">
+                                        <label for="perfectCompet">완전 경쟁</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" id="cutthroatCompet" name="compet">
+                                        <label for="cutthroatCompet">치열한 경쟁</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>전략</td>
+                                    <td>
+                                        <input type="radio" id="deficit" name="stra" checked>
+                                        <label for="deficit">적자 ▶ 제품 관리 집중</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" id="increProf" name="stra">
+                                        <label for="increProf">매출/이익 증가 ▶ 광고시작</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" id="declProf" name="stra">
+                                        <label for="declProf">매출/이익 감소 ▶ 홍보활동 강화</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" id="exitStra" name="stra">
+                                        <label for="exitStra">출구전략</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>특성</td>
+                                    <td>
+                                        <input type="radio" id="basicFuncProd" name="char" checked>
+                                        <label for="basicFuncProd">기본 기능 제품</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" id="addFeatServ" name="char">
+                                        <label for="addFeatServ">기능 및 서비스 추가</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" id="ProdDiff" name="char">
+                                        <label for="ProdDiff">제품/서비스 차별화</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" id="quanDiff" name="char">
+                                        <label for="quanDiff">수량 차별화(1+1)</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>가격</td>
+                                    <td>
+                                        <input type="radio" id="highPrice" name="price" checked>
+                                        <label for="highPrice">고가격</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" id="priceAdju" name="price">
+                                        <label for="priceAdju">가격 조정</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" id="priceDisc" name="price">
+                                        <label for="priceDisc">가격 할인</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" id="priceDumping" name="price">
+                                        <label for="priceDumping">가격 덤핑</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>유통망</td>
+                                    <td>
+                                        <input type="radio" id="smallDistNetw" name="distNetw" checked>
+                                        <label for="smallDistNetw">적은 유통망</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" id="incrDistNetw" name="distNetw">
+                                        <label for="incrDistNetw">유통망 증대</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" id="secgMuleDisnNetw" name="distNetw">
+                                        <label for="secgMuleDisnNetw">유통망 다수 확보</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" id="reduDistNetw" name="distNetw">
+                                        <label for="reduDistNetw">유통망 축소</label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                     <!-- ======== content end ======== -->
 

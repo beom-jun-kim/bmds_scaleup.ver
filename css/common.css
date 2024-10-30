@@ -20,17 +20,6 @@ img {
   /* max-width: 100%; */
 }
 
-table {
-  width: 100%;
-  border: 1px solid #d1d1d1;
-  border-collapse: collapse;
-}
-
-th,
-td {
-  border: 1px solid #d1d1d1;
-}
-
 body {
   display: flex;
   justify-content: center;
