@@ -12,52 +12,73 @@
 </head>
 
 <style>
-    .market-trends {
+    .regulations-laws {
         display: flex;
-        gap: 20px;
-        background: #e7e6e6;
-        margin-top: 50px;
-        padding-right: 20px;
-        padding-left: 20px;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        gap: 10px;
     }
 
-    .market-trends-content {
-        flex: 1;
-    }
-
-    .issues-box {
-        height:325px;
-    }
-
-    .issues-box textarea {
-        width: 100%;
-        height: 100%;
-        resize: none;
-        outline: none;
+    .regulations-laws input {
         border: none;
-        margin-bottom: 10px;
-        padding-right: 10px;
-        padding-left: 10px;
+        border-bottom: 1px dotted;
+        width: 100%;
+        outline: none;
         padding-top: 10px;
         padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
-    .issues-title {
-        margin: 0 auto;
-        width: 70%;
-        margin-top: -70px;
-        margin-bottom: 20px;
-        border-radius: 5px;
+    .regulations-laws-box {
+        flex: 1;
+        height: 600px;
+        margin-top: 50px;
+        border: 6px solid #C179BE;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
-    .arrow-primary-factor {
+    .regulations-input-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+    }
+
+    .regulations-laws-title {
+        background: #fff;
+        color: #C179BE;
+        height: 50px;
+        line-height: 50px;
         text-align: center;
+        margin: -50px auto;
+        width: fit-content;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .arrow-input-wrap {
+        position: relative;
+    }
+
+    .arrow-img-box {
+        width: 12px;
+        position: absolute;
+    }
+
+    .arrow-input-box {
+        text-align: right;
     }
     
-    .arrow-primary-factor img {
-        width: 150px;
+    .arrow-input-box input {
+        width: 95%;
+    }
+
+    .arrow-img-box img {
+        max-width: 100%;
     }
 </style>
 
@@ -128,38 +149,50 @@
             <!-- ======== content start ======== -->
             <div class="content-wrapper">
                 <div class="regulations-laws">
-                    <div class="service">
-                        <div class="service-title">
+                    <div class="regulations-laws-box">
+                        <div class="regulations-laws-title">
                             <p>제품(서비스) 관련 정책 및 규제 / 법규</p>
                         </div>
-                        <div class="regulations-input">
-                            <input type="text">
-                            <input type="text">
-                            <input type="text">
+                        <div class="regulations-input-wrapper">
+                            <div class="regulations-input-box">
+                                <input type="text">
+                            </div>
+                            <div class="regulations-input-box">
+                                <input type="text">
+                            </div>
+                            <div class="regulations-input-box">
+                                <input type="text">
+                            </div>
                         </div>
                     </div>
-                    <div class="response-status">
-                        <div class="response-title">
+                    <div class="regulations-laws-box">
+                        <div class="regulations-laws-title">
                             <p>규제 및 법규 대응 현황</p>
                         </div>
-                        <div class="regulations-input">
+                        <div class="regulations-input-wrapper">
                             <div class="arrow-input-wrap">
-                                <div class="arrow-input-box">
+                                <div class="arrow-img-box">
                                     <img src="./img/section-01/regulations-laws-arrow.png" alt="">
                                 </div>
-                                <input type="text">
+                                <div class="arrow-input-box">
+                                    <input type="text">
+                                </div>
                             </div>
                             <div class="arrow-input-wrap">
-                                <div class="arrow-input-box">
+                                <div class="arrow-img-box">
                                     <img src="./img/section-01/regulations-laws-arrow.png" alt="">
                                 </div>
-                                <input type="text">
+                                <div class="arrow-input-box">
+                                    <input type="text">
+                                </div>
                             </div>
                             <div class="arrow-input-wrap">
-                                <div class="arrow-input-box">
+                                <div class="arrow-img-box">
                                     <img src="./img/section-01/regulations-laws-arrow.png" alt="">
                                 </div>
-                                <input type="text">
+                                <div class="arrow-input-box">
+                                    <input type="text">
+                                </div>
                             </div>
                         </div>
                     </div>
