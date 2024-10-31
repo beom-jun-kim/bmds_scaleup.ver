@@ -45,4 +45,8 @@ body {
   line-height: 48px;
   border: 2px solid #a84ea4;
   background: #fff;
+  width: max-content;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 5px;
 }

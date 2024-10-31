@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/content-container.css">
+    <link rel="stylesheet" href="./css/snb.css">
+    <link rel="stylesheet" href="./css/checkbox.css">
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+</head>
+
+<style>
+    .value-chain-title {
+        margin: 20px 0;
+    }
+
+    .value-chain-img img,
+    .customer-location-content img,
+    .dot-box img {
+        max-width: 100%;
+    }
+
+    hr {
+        border-style:dotted;
+        border-width:1px 0 0 0;
+        border-color:#bbb;
+        margin: 20px 0;
+    }
+
+    .customer-location-wrapper {
+        margin-top: 150px;
+    }
+
+    .customer-location-line {
+        height: 3px;
+        width: 100%;
+        background: #C179BE;
+    }
+
+    .supply-demand-box,
+    .customer-location-content {
+        width: 100px;
+        height: 100px;
+        border-radius: 5px;
+    }
+    
+    .supply-demand-box {
+        border: 3px solid #C179BE;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        color: #C179BE;
+    }
+
+    .customer-location-box {
+        display: flex;
+        margin-top: -50px;
+        justify-content: space-between;
+    }
+
+    .customer-location-content {
+        background: #E7E6E6;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .icon-box {
+        width: 50px;
+        margin: 0 auto;
+    }
+
+    .dot-box {
+        width: 10px;
+        position: absolute;
+        top: -80px;
+    }
+</style>
+
+<body>
+    <div class="bmds-container">
+        <div class="section-nav-bar">
+            <div class="nav-title-box">
+                <nav>
+                    <div class="nav-title">
+                        <p>The Scalable Business Model Design</p>
+                    </div>
+                    <ul>
+                        <li>
+                            마켓 인사이트
+                        </li>
+                        <li>
+                            고객/문제 정의
+                        </li>
+                        <li>
+                            기존 대안 분석
+                        </li>
+                        <li>
+                            해결안
+                        </li>
+                        <li>
+                            가치 선정
+                        </li>
+                        <li>
+                            핵심 자원
+                        </li>
+                        <li>
+                            핵심 파트너
+                        </li>
+                        <li>
+                            핵심 활동
+                        </li>
+                        <li>
+                            수익모델
+                        </li>
+                        <li>
+                            고객 경험 설계
+                        </li>
+                        <li>
+                            피드백
+                        </li>
+                    </ul>
+                    <div class="empty-box"></div>
+                </nav>
+            </div>
+        </div>
+        <div class="content-section-number">
+            <img src="./img/section-01/title-01.png" alt="">
+        </div>
+        <div class="content-container">
+            <div class="content-header">
+                <div class="content-header-right">
+                    <div class="bmds-logo">
+                        <img src="./img/common/img_logo.png" alt="">
+                    </div>
+                    <p class="content-section-en-title">Market Insight</p>
+                    <p class="content-section-title">1&#41; 시장정의</p>
+                    <div class="description">
+                        <p>제품(서비스)의 시장에 대해 간략히 서술하고, 해당 시장의 시장 규모와 시장의 성장성을 파악합니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======== content start ======== -->
+            <div class="content-wrapper">
+                <div class="value-chain-title common-title-box">
+                    가치사슬 구조는 산업 및 서비스 유형에 따라 변경하여 사용합니다
+                </div>
+                <div class="value-chain-img">
+                    <img src="./img/section-02/value-chain_2-1.png" alt="">
+                </div>
+                <hr>
+                <div class="customer-location-wrapper">
+                    <div class="customer-location-line"></div>
+                    <div class="customer-location-box">
+                        <div class="supply-demand-box">
+                            <p>공급측<br />고객위치</p>
+                        </div>
+                        <div class="customer-location-content">
+                            <div class="dot-box">
+                                <img src="./img/section-02/value-chai-dot.png" alt="">
+                            </div>
+                            <div class="icon-box">
+                                <img src="./img/section-02/13_01.png" alt="">
+                            </div>
+                            <div class="customer-location-chk">
+                                <input type="radio" id="provider" name="cusLoc" checked>
+                                <label for="provider">공급자</label>
+                            </div>
+                        </div>
+                        <div class="customer-location-content">
+                            <div class="dot-box">
+                                <img src="./img/section-02/value-chai-dot.png" alt="">
+                            </div>
+                            <div class="icon-box">
+                                <img src="./img/section-02/13_02.png" alt="">
+                            </div>
+                            <input type="radio" id="provider" name="cusLoc">
+                            <label for="provider">공급자</label>
+                        </div>
+                        <div class="customer-location-content">
+                            <div class="dot-box">
+                                <img src="./img/section-02/value-chai-dot.png" alt="">
+                            </div>
+                            <div class="icon-box">
+                                <img src="./img/section-02/13_03.png" alt="">
+                            </div>
+                            <input type="radio" id="provider" name="cusLoc">
+                            <label for="provider">공급자</label>
+                        </div>
+                        <div class="customer-location-content">
+                            <div class="dot-box">
+                                <img src="./img/section-02/value-chai-dot.png" alt="">
+                            </div>
+                            <div class="icon-box">
+                                <img src="./img/section-02/13_04.png" alt="">
+                            </div>
+                            <input type="radio" id="provider" name="cusLoc">
+                            <label for="provider">공급자</label>
+                        </div>
+                        <div class="customer-location-content">
+                            <div class="dot-box">
+                                <img src="./img/section-02/value-chai-dot.png" alt="">
+                            </div>
+                            <div class="icon-box">
+                                <img src="./img/section-02/13_05.png" alt="">
+                            </div>
+                            <input type="radio" id="provider" name="cusLoc">
+                            <label for="provider">공급자</label>
+                        </div>
+                        <div class="customer-location-content">
+                            <div class="dot-box">
+                                <img src="./img/section-02/value-chai-dot.png" alt="">
+                            </div>
+                            <div class="icon-box">
+                                <img src="./img/section-02/13_06.png" alt="">
+                            </div>
+                            <input type="radio" id="provider" name="cusLoc">
+                            <label for="provider">공급자</label>
+                        </div>
+                        <div class="supply-demand-box">
+                            <p>수요측<br />고객위치</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ======== content end ======== -->
+
+        </div>
+    </div>
+</body>
+
+</html>
