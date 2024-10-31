@@ -1,18 +1,18 @@
 .content-container {
-  width: 100%;
   padding: 20px 0;
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
-.content-container-flex {
+.content-header {
   display: flex;
+  padding-right: 30px;
 }
 
-.content-common-wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 100%;
+.content-section-number {
+  width: 100px;
+  padding-top: 20px;
 }
 
 .content-header-right {
@@ -21,11 +21,14 @@
 
 .bmds-logo {
   text-align: right;
-  padding-right: 20px;
 }
 
 .content-section-en-title {
   color: #aeaeae;
+}
+
+.content-wrapper {
+  padding-right: 30px;
 }
 
 .content-wrapper .content-section-title {

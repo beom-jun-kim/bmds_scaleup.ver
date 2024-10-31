@@ -6,6 +6,8 @@
 .nav-title-box {
   padding: 30px 20px;
   height: 100%;
+  /* flex:1 */
+  
 }
 
 .nav-title-box .nav-title {

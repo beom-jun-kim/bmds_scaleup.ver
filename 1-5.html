@@ -12,54 +12,52 @@
 </head>
 
 <style>
-    .market-overview textarea {
+    .market-trends {
+        display: flex;
+        gap: 20px;
+        background: #e7e6e6;
+        margin-top: 50px;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .market-trends-content {
+        flex: 1;
+    }
+
+    .issues-box {
+        height:325px;
+    }
+
+    .issues-box textarea {
         width: 100%;
-        height: 150px;
+        height: 100%;
         resize: none;
-        border-radius: 0 0 20px 0;
-        margin: 20px 0;
-        border: 3px solid #ECE2EE;
-        padding: 15px 20px;
         outline: none;
-        font-size: 16px;
+        border: none;
+        margin-bottom: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
-    .tam-sam-som-title {
-        padding-left: 23px;
+    .issues-title {
+        margin: 0 auto;
+        width: 70%;
+        margin-top: -70px;
+        margin-bottom: 20px;
+        border-radius: 5px;
     }
 
-    .tam-sam-som-img {
-        margin-top: 20px;
+    .arrow-primary-factor {
         text-align: center;
     }
-
-    .target-market-setting-wrapper {
-        display: flex;
-        gap: 10px;
-    }
-
-    .target-market-setting-box {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        border: 2px solid #ECE2EE;
-        border-radius: 5px;
-        padding: 10px 15px;
-        margin-top: 10px;
-        width: 100%;
-    }
-
-    .target-market-text p {
-        color: #A84EA4;
-    }
-
-    .target-market-text input {
-        background: #f2f2f2;
-        border: none;
-        height: 45px;
-        outline: none;
-        padding: 0 15px;
-        margin-top: 5px;
+    
+    .arrow-primary-factor img {
+        width: 150px;
     }
 </style>
 
@@ -115,7 +113,6 @@
         </div>
         <div class="content-container">
             <div class="content-header">
-
                 <div class="content-header-right">
                     <div class="bmds-logo">
                         <img src="./img/common/img_logo.png" alt="">
@@ -130,51 +127,38 @@
 
             <!-- ======== content start ======== -->
             <div class="content-wrapper">
-                <div class="market-overview">
-                    <textarea placeholder="● 시장개요"></textarea>
-                </div>
-                <div class="tam-sam-som">
-                    <span class="tam-sam-som-title">● TAM-SAM-SOM 정의</span>
-                    <div class="tam-sam-som-img">
-                        <img src="./img/section-01/img_07.png" alt="">
+                <div class="regulations-laws">
+                    <div class="service">
+                        <div class="service-title">
+                            <p>제품(서비스) 관련 정책 및 규제 / 법규</p>
+                        </div>
+                        <div class="regulations-input">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text">
+                        </div>
                     </div>
-                </div>
-                <div class="tam-sam-som">
-                    <span class="tam-sam-som-title">● 목표시장 설정 </span>
-                    <div class="target-market-setting-wrapper">
-                        <div class="target-market-setting-box">
-                            <div class="target-market-icon">
-                                <img src="./img/section-01/07_icon_01.png" alt="">
-                            </div>
-                            <div class="target-market-text" style="width: 100%;">
-                                <p>시장 정의</p>
-                                <input type="text" style="width: 100%;">
-                            </div>
+                    <div class="response-status">
+                        <div class="response-title">
+                            <p>규제 및 법규 대응 현황</p>
                         </div>
-                        <div class="target-market-setting-box">
-                            <div class="target-market-icon">
-                                <img src="./img/section-01/07_icon_02.png" alt="">
-                            </div>
-                            <div class="target-market-text">
-                                <p>시장 규모</p>
+                        <div class="regulations-input">
+                            <div class="arrow-input-wrap">
+                                <div class="arrow-input-box">
+                                    <img src="./img/section-01/regulations-laws-arrow.png" alt="">
+                                </div>
                                 <input type="text">
                             </div>
-                        </div>
-                        <div class="target-market-setting-box">
-                            <div class="target-market-icon">
-                                <img src="./img/section-01/07_icon_03.png" alt="">
-                            </div>
-                            <div class="target-market-text">
-                                <p>시장 분류</p>
+                            <div class="arrow-input-wrap">
+                                <div class="arrow-input-box">
+                                    <img src="./img/section-01/regulations-laws-arrow.png" alt="">
+                                </div>
                                 <input type="text">
                             </div>
-                        </div>
-                        <div class="target-market-setting-box">
-                            <div class="target-market-icon">
-                                <img src="./img/section-01/07_icon_04.png" alt="">
-                            </div>
-                            <div class="target-market-text">
-                                <p>평균 성장률</p>
+                            <div class="arrow-input-wrap">
+                                <div class="arrow-input-box">
+                                    <img src="./img/section-01/regulations-laws-arrow.png" alt="">
+                                </div>
                                 <input type="text">
                             </div>
                         </div>
