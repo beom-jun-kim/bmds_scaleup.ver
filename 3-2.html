@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/content-container.css">
+    <link rel="stylesheet" href="./css/snb.css">
+    <link rel="stylesheet" href="./css/checkbox.css">
+    <link rel="stylesheet" href="./css/table.css">
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+</head>
+
+<style>
+
+    .existing-alternative input[type="radio"] + label::before {
+        transform: translateY(-3px);
+    }
+
+    .existing-alternative input[type="checkbox"] + label::before {
+        transform: translateY(4px);
+    }
+
+    .existing-alternative input[type="radio"] + label::before,
+    .existing-alternative input[type="checkbox"] + label::before {
+        width: 12px;
+        height: 12px;
+    }
+
+    .existing-alternative input[type="radio"]:checked + label::before,
+    .existing-alternative input[type="checkbox"]:checked + label::before {
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23a84ea4" width="12" height="12"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 20.59 7.41 19.17 6l-10 10.17z" stroke="%23a84ea4" /></svg>');
+    }
+
+    .existing-alternative {
+        text-align: center;
+        margin-top: 20px;
+        word-break: keep-all;
+    }
+
+    .existing-alternative th{
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: #C179BE;
+        color:#ffffff;
+        font-weight: 300;
+    }
+
+    .existing-alternative tr td:first-child {
+        position: relative;
+        background: #ECE2EE;
+        color: #C179BE;
+        padding-left: 25px;
+    }
+
+    .existing-input-list li {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .existing-position-box {
+        display: flex;
+    }
+
+    .existing-position {
+        border-right: 1px solid #d1d1d1;
+        flex: 1;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .existing-position:last-child {
+        border-right: none;
+    }
+
+    .existing-position span {
+        margin-bottom: 10px;
+        text-decoration: underline;
+        color: #C179BE;
+    }
+
+    .existing-position p {
+        font-size: 13px;
+    }
+
+    .existing-img {
+        width: 45px;
+        height: 45px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background: #fff;
+        border-radius: 50%;
+        border: 1px solid #C179BE;
+        position: absolute;
+        top: 50%;
+        left: -20px;
+        transform: translateY(-50%);
+    }
+
+    .existing-img img {
+        max-width: 100%;
+    }
+
+    .level-market-comp {
+        background: #d1d1d13f;
+    }
+
+    .level-market-comp-box {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .existing-textarea {
+        resize: none;
+        border: none;
+        outline: none;
+        width: 100%;
+        height: 80px;
+    }
+    
+    .border-bottom ul {
+        border-bottom: 1px solid #d1d1d1;
+    }
+</style>
+
+<body>
+    <div class="bmds-container">
+        <div class="section-nav-bar">
+            <div class="nav-title-box">
+                <nav>
+                    <div class="nav-title">
+                        <p>The Scalable Business Model Design</p>
+                    </div>
+                    <ul>
+                        <li>
+                            마켓 인사이트
+                        </li>
+                        <li>
+                            고객/문제 정의
+                        </li>
+                        <li>
+                            기존 대안 분석
+                        </li>
+                        <li>
+                            해결안
+                        </li>
+                        <li>
+                            가치 선정
+                        </li>
+                        <li>
+                            핵심 자원
+                        </li>
+                        <li>
+                            핵심 파트너
+                        </li>
+                        <li>
+                            핵심 활동
+                        </li>
+                        <li>
+                            수익모델
+                        </li>
+                        <li>
+                            고객 경험 설계
+                        </li>
+                        <li>
+                            피드백
+                        </li>
+                    </ul>
+                    <div class="empty-box"></div>
+                </nav>
+            </div>
+        </div>
+        <div class="content-section-number">
+            <img src="./img/section-01/title-01.png" alt="">
+        </div>
+        <div class="content-container">
+            <div class="content-header">
+                <div class="content-header-right">
+                    <div class="bmds-logo">
+                        <img src="./img/common/img_logo.png" alt="">
+                    </div>
+                    <p class="content-section-en-title">Market Insight</p>
+                    <p class="content-section-title">1&#41; 시장정의</p>
+                    <div class="description">
+                        <p>제품(서비스)의 시장에 대해 간략히 서술하고, 해당 시장의 시장 규모와 시장의 성장성을 파악합니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======== content start ======== -->
+            <div class="content-wrapper">
+                <table class="existing-alternative table-checkbox">
+                    <thead>
+                        <th>구분</th>
+                        <th colspan="3">A사 제품/서비스</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="existing-img">
+                                    <img src="./img/section-03/19_01.png" alt="">
+                                </div>
+                                <span>제품/서비스의<br/>주요 기능 및 성능</span>
+                            </td>
+                            <td>
+                                <textarea class="existing-textarea" placeholder="입력"></textarea>
+                            </td>
+                            <td>
+                                <textarea class="existing-textarea" placeholder="입력"></textarea>
+                            </td>
+                            <td>
+                                <textarea class="existing-textarea" placeholder="입력"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="existing-img">
+                                    <img src="./img/section-03/19_02.png" alt="">
+                                </div>
+                                <span>시장 포지셔닝<br/>(핵심구매요소 및<br/>고객 구매 혜택)</span>
+                            </td>
+                            <td colspan="3" style="padding: 0;">
+                                <div class="existing-position-box">
+                                    <ul class="existing-input-list existing-position">
+                                        <span>고객의 핵심 구매 요소 (Key Buying Factor)</span>
+                                        <li>
+                                            <input type="checkbox" id="money" name="scale">
+                                            <label for="money">10억 미만</label>
+                                            <input type="checkbox" id="money" name="scale">
+                                            <label for="money">10억 미만</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="money" name="scale">
+                                            <label for="money">10억 미만</label>
+                                            <input type="checkbox" id="money" name="scale">
+                                            <label for="money">10억 미만</label>
+                                        </li>
+                                    </ul>
+                                    <ul class="existing-input-list existing-position">
+                                        <span>고객의 구매 혜택(Customer Buying Benefits)</span>
+                                        <li>
+                                            <input type="checkbox" id="money" name="scale">
+                                            <label for="money">10억 미만</label>
+                                            <input type="checkbox" id="money" name="scale">
+                                            <label for="money">10억 미만</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="money" name="scale">
+                                            <label for="money">10억 미만</label>
+                                            <input type="checkbox" id="money" name="scale">
+                                            <label for="money">10억 미만</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="existing-img">
+                                    <img src="./img/section-03/19_03.png" alt="">
+                                </div>
+                                <span>제품/서비스 강점</span>
+                            </td>
+                            <td colspan="3" style="padding: 0;">
+                                <div class="existing-position-box border-bottom">
+                                    <ul class="existing-input-list existing-position">
+                                        <li>
+                                            <input type="radio" id="money" name="scale">
+                                            <label for="money">10억 미만</label>
+                                            <input type="radio" id="money" name="scale">
+                                            <label for="money">10억 미만</label>
+                                        </li>
+                                    </ul>
+                                    <ul class="existing-input-list existing-position">
+                                        <li>
+                                            <p>분류 가능한 재질이 매우 다양하며 작업의 효율성과 범용성이 우수</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="existing-input-list existing-position">
+                                        <li>
+                                            <input type="radio" id="money" name="scale">
+                                            <label for="money">10억 미만</label>
+                                            <input type="radio" id="money" name="scale">
+                                            <label for="money">10억 미만</label>
+                                        </li>
+                                    </ul>
+                                    <ul class="existing-input-list existing-position">
+                                        <li>
+                                            <p>분류 가능한 재질이 매우 다양하며 작업의 효율성과 범용성이 우수</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="existing-position-box">
+                                    <ul class="existing-input-list existing-position">
+                                        <li>
+                                            <input type="radio" id="money" name="scale">
+                                            <label for="money">10억 미만</label>
+                                            <input type="radio" id="money" name="scale">
+                                            <label for="money">10억 미만</label>
+                                        </li>
+                                    </ul>
+                                    <ul class="existing-input-list existing-position">
+                                        <li>
+                                            <p>분류 가능한 재질이 매우 다양하며 작업의 효율성과 범용성이 우수</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="existing-input-list existing-position">
+                                        <li>
+                                            <input type="radio" id="money" name="scale">
+                                            <label for="money">10억 미만</label>
+                                            <input type="radio" id="money" name="scale">
+                                            <label for="money">10억 미만</label>
+                                        </li>
+                                    </ul>
+                                    <ul class="existing-input-list existing-position">
+                                        <li>
+                                            <p>분류 가능한 재질이 매우 다양하며 작업의 효율성과 범용성이 우수</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="existing-img">
+                                    <img src="./img/section-03/19_04.png" alt="">
+                                </div>
+                                <span>제품/서비스 약점</span>
+                            </td>
+                            <td colspan="3" style="padding: 0;">
+                                <div class="existing-position-box border-bottom">
+                                    <ul class="existing-input-list existing-position">
+                                        <li>
+                                            <input type="radio" id="money" name="scale">
+                                            <label for="money">10억 미만</label>
+                                            <input type="radio" id="money" name="scale">
+                                            <label for="money">10억 미만</label>
+                                        </li>
+                                    </ul>
+                                    <ul class="existing-input-list existing-position">
+                                        <li>
+                                            <p>분류 가능한 재질이 매우 다양하며 작업의 효율성과 범용성이 우수</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="existing-input-list existing-position">
+                                        <li>
+                                            <input type="radio" id="money" name="scale">
+                                            <label for="money">10억 미만</label>
+                                            <input type="radio" id="money" name="scale">
+                                            <label for="money">10억 미만</label>
+                                        </li>
+                                    </ul>
+                                    <ul class="existing-input-list existing-position">
+                                        <li>
+                                            <p>분류 가능한 재질이 매우 다양하며 작업의 효율성과 범용성이 우수</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="existing-position-box">
+                                    <ul class="existing-input-list existing-position">
+                                        <li>
+                                            <input type="radio" id="money" name="scale">
+                                            <label for="money">10억 미만</label>
+                                            <input type="radio" id="money" name="scale">
+                                            <label for="money">10억 미만</label>
+                                        </li>
+                                    </ul>
+                                    <ul class="existing-input-list existing-position">
+                                        <li>
+                                            <p>분류 가능한 재질이 매우 다양하며 작업의 효율성과 범용성이 우수</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="existing-input-list existing-position">
+                                        <li>
+                                            <input type="radio" id="money" name="scale">
+                                            <label for="money">10억 미만</label>
+                                            <input type="radio" id="money" name="scale">
+                                            <label for="money">10억 미만</label>
+                                        </li>
+                                    </ul>
+                                    <ul class="existing-input-list existing-position">
+                                        <li>
+                                            <p>분류 가능한 재질이 매우 다양하며 작업의 효율성과 범용성이 우수</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>시장 경쟁력 수준</span>
+                            </td>
+                            <td colspan="3" class="level-market-comp">
+                                <div class="level-market-comp-box">
+                                    <input type="radio" id="money" name="scale">
+                                    <label for="money">10억 미만</label>
+                                    <input type="radio" id="money" name="scale">
+                                    <label for="money">10억 미만</label>
+                                    <input type="radio" id="money" name="scale">
+                                    <label for="money">10억 미만</label>
+                                    <input type="radio" id="money" name="scale">
+                                    <label for="money">10억 미만</label>
+                                    <input type="radio" id="money" name="scale">
+                                    <label for="money">10억 미만</label>
+                                    <input type="radio" id="money" name="scale">
+                                    <label for="money">10억 미만</label>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- ======== content end ======== -->
+
+        </div>
+    </div>
+</body>
+
+</html>
