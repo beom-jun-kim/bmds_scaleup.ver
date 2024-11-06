@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/content-container.css">
+    <link rel="stylesheet" href="./css/snb.css">
+    <link rel="stylesheet" href="./css/checkbox.css">
+    <link rel="stylesheet" href="./css/table.css">
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+</head>
+
+<style>
+    .cust-requ-desi {
+        display: flex;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .life-cycle-graph {
+        text-align: center;
+        flex: 1;
+        border: 3px dotted;
+        line-height: 350px;
+        margin-bottom: 20px;
+    }
+
+    .cust-requ-desi-t {
+        margin-bottom: 20px;
+        flex: 1;
+    }
+
+    .cust-requ-desi-t thead {
+        background: #ECE2EE;
+        color: #C179BE;
+    }
+    
+    .cust-requ-desi-t thead th {
+        font-weight: 300;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .cust-requ-desi-t input{
+        outline: none;
+        border: none;
+    }
+</style>
+
+<body>
+    <div class="bmds-container">
+        <div class="section-nav-bar">
+            <div class="nav-title-box">
+                <nav>
+                    <div class="nav-title">
+                        <p>The Scalable Business Model Design</p>
+                    </div>
+                    <ul>
+                        <li>
+                            마켓 인사이트
+                        </li>
+                        <li>
+                            고객/문제 정의
+                        </li>
+                        <li>
+                            기존 대안 분석
+                        </li>
+                        <li>
+                            해결안
+                        </li>
+                        <li>
+                            가치 선정
+                        </li>
+                        <li>
+                            핵심 자원
+                        </li>
+                        <li>
+                            핵심 파트너
+                        </li>
+                        <li>
+                            핵심 활동
+                        </li>
+                        <li>
+                            수익모델
+                        </li>
+                        <li>
+                            고객 경험 설계
+                        </li>
+                        <li>
+                            피드백
+                        </li>
+                    </ul>
+                    <div class="empty-box"></div>
+                </nav>
+            </div>
+        </div>
+        <div class="content-section-number">
+            <img src="./img/section-01/title-01.png" alt="">
+        </div>
+        <div class="content-container">
+            <div class="content-header">
+                <div class="content-header-right">
+                    <div class="bmds-logo">
+                        <img src="./img/common/img_logo.png" alt="">
+                    </div>
+                    <p class="content-section-en-title">Market Insight</p>
+                    <p class="content-section-title">1&#41; 시장정의</p>
+                    <div class="description">
+                        <p>제품(서비스)의 시장에 대해 간략히 서술하고, 해당 시장의 시장 규모와 시장의 성장성을 파악합니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======== content start ======== -->
+            <div class="content-wrapper">
+                <div class="cust-requ-desi">
+                    <div class="life-cycle-graph">그래프</div>
+                    <div class="cust-requ-desi-t-box">
+                        <table class="cust-requ-desi-t table-checkbox">
+                            <thead>
+                                <th>
+                                    차별적 요구사항
+                                </th>
+                                <th>
+                                    지표
+                                </th>
+                                <th>
+                                    목표
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="text" placeholder="입력">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="입력">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="입력">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="cust-requ-desi-t table-checkbox">
+                            <thead>
+                                <th>
+                                    경쟁적 요구사항
+                                </th>
+                                <th>
+                                    지표
+                                </th>
+                                <th>
+                                    목표
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="text" placeholder="입력">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="입력">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="입력">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="cust-requ-desi-t table-checkbox">
+                            <thead>
+                                <th>
+                                    기본적 요구사항
+                                </th>
+                                <th>
+                                    지표
+                                </th>
+                                <th>
+                                    목표
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="text" placeholder="입력">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="입력">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="입력">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- ======== content end ======== -->
+
+        </div>
+    </div>
+</body>
+
+</html>
