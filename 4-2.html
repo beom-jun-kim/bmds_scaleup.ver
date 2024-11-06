@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/content-container.css">
+    <link rel="stylesheet" href="./css/snb.css">
+    <link rel="stylesheet" href="./css/checkbox.css">
+    <link rel="stylesheet" href="./css/table.css">
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+</head>
+
+<style>
+    .select-comparison-item {
+        margin-top: 20px;
+        white-space: nowrap;
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .select-comparison-item input {
+        width: 100%;
+        outline: none;
+        border: none;
+    }
+
+    .select-comparison-item thead th {
+        background: #C179BE;
+        color: #fff;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: 300;
+    }
+</style>
+
+<body>
+    <div class="bmds-container">
+        <div class="section-nav-bar">
+            <div class="nav-title-box">
+                <nav>
+                    <div class="nav-title">
+                        <p>The Scalable Business Model Design</p>
+                    </div>
+                    <ul>
+                        <li>
+                            마켓 인사이트
+                        </li>
+                        <li>
+                            고객/문제 정의
+                        </li>
+                        <li>
+                            기존 대안 분석
+                        </li>
+                        <li>
+                            해결안
+                        </li>
+                        <li>
+                            가치 선정
+                        </li>
+                        <li>
+                            핵심 자원
+                        </li>
+                        <li>
+                            핵심 파트너
+                        </li>
+                        <li>
+                            핵심 활동
+                        </li>
+                        <li>
+                            수익모델
+                        </li>
+                        <li>
+                            고객 경험 설계
+                        </li>
+                        <li>
+                            피드백
+                        </li>
+                    </ul>
+                    <div class="empty-box"></div>
+                </nav>
+            </div>
+        </div>
+        <div class="content-section-number">
+            <img src="./img/section-01/title-01.png" alt="">
+        </div>
+        <div class="content-container">
+            <div class="content-header">
+                <div class="content-header-right">
+                    <div class="bmds-logo">
+                        <img src="./img/common/img_logo.png" alt="">
+                    </div>
+                    <p class="content-section-en-title">Market Insight</p>
+                    <p class="content-section-title">1&#41; 시장정의</p>
+                    <div class="description">
+                        <p>제품(서비스)의 시장에 대해 간략히 서술하고, 해당 시장의 시장 규모와 시장의 성장성을 파악합니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======== content start ======== -->
+            <div class="content-wrapper">
+                <table class="select-comparison-item table-checkbox">
+                    <thead>
+                        <th>No.</th>
+                        <th>비교항목(Criteria)</th>
+                        <th>Weight</th>
+                        <th colspan="2">당사 제품 Spec.</th>
+                        <th colspan="2">A사 a제품(1위 제품)</th>
+                        <th colspan="2">B사 b제품(유사 수준 제품)</th>
+                        <th colspan="2">C사 c제품(이슈가 되는 제품)</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">1</td>
+                            <td rowspan="2">비교항목 입력</td>
+                            <td rowspan="2">1~5</td>
+                            <td>해결방식</td>
+                            <td><input type="text" placeholder="입력"></td>
+                            <td>해결방식</td>
+                            <td><input type="text" placeholder="입력"></td>
+                            <td>해결방식</td>
+                            <td><input type="text" placeholder="입력"></td>
+                            <td>해결방식</td>
+                            <td><input type="text" placeholder="입력"></td>
+                        </tr>
+                        <tr>
+                            <td>비교우위</td>
+                            <td>Same(0)</td>
+                            <td>비교우위</td>
+                            <td>Same(0)</td>
+                            <td>비교우위</td>
+                            <td>Same(0)</td>
+                            <td>비교우위</td>
+                            <td>Same(0)</td>
+                        </tr>
+                        <tr>
+                            <td style="background: #d1d1d1;"></td>
+                            <td>점수 합계</td>
+                            <td colspan="3">
+                                <span>가중치 X 비교우위점수</span>
+                                <span class="result"></span>
+                            </td>
+                            <td colspan="2">
+                                <span class="result"></span>
+                            </td>
+                            <td colspan="2">
+                                <span class="result"></span>
+                            </td>
+                            <td colspan="2">
+                                <span class="result"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background: #d1d1d1;"></td>
+                            <td>점수 합계</td>
+                            <td colspan="3">
+                                <span>제품(서비스) 경쟁력 순위</span>
+                                <span class="result"></span>
+                            </td>
+                            <td colspan="2">
+                                <span class="result"></span>
+                            </td>
+                            <td colspan="2">
+                                <span class="result"></span>
+                            </td>
+                            <td colspan="2">
+                                <span class="result"></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- ======== content end ======== -->
+
+        </div>
+    </div>
+</body>
+
+</html>
