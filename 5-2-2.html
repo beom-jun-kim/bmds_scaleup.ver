@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/content-container.css">
+    <link rel="stylesheet" href="./css/snb.css">
+    <link rel="stylesheet" href="./css/checkbox.css">
+    <link rel="stylesheet" href="./css/table.css">
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+</head>
+
+<style>
+
+    .market-fit-wrapper {
+        display: flex;
+        gap: 20px;
+    }
+
+    .market-fit-box {
+        flex: 1;
+    }
+
+    .market-fit-title {
+        width: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .market-fit-calculation {
+        border: 1px dotted #000;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+
+    .market-fit-bar-box {
+        margin-top: 40px;
+        display: flex;
+        gap: 5px;
+    }
+    
+    .market-fit-bar-title {
+        background: #e7e6e6;
+        height: 53px;
+        line-height: 53px;
+        padding-left: 15px;
+        padding-right: 15px;
+        flex: 1;
+        text-align: center;
+    }
+
+    .market-fit-bar-container {
+        flex: 5;
+    }
+    
+    .market-fit-bar {
+        border: 1px solid #d1d1d1;
+        height: 53px;
+    }
+
+    .market-fit-bar-num {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .market-fit-bar-data {
+        width: 50px;
+        height: 100%;
+        background: #C179BE;
+        position: relative;
+    }
+
+    .data01 {
+        margin-left: 20%; /* 위치 변수 */   
+    }
+
+    .data02 {
+        margin-left: 40%; /* 위치 변수 */
+    }
+
+    .data03 {
+        margin-left: 15%; /* 위치 변수 */
+    }
+
+    .market-fit-bar-data small {
+        position: absolute;
+        color: rgb(228, 25, 25);
+    }
+
+    .market-fit-bar-data small:first-child {
+        top: -20px;
+        right: -15px;
+    }
+
+    .market-fit-bar-data small:last-child {
+        bottom: -20px;
+        left: -15px;
+    }
+
+    .market-fit-table {
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .market-fit-table thead th {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: #ECE2EE;
+        color: #C179BE;
+    }
+
+    .market-fit-table tr td {
+        word-break: keep-all;
+    }
+</style>
+
+<body>
+    <div class="bmds-container">
+        <div class="section-nav-bar">
+            <div class="nav-title-box">
+                <nav>
+                    <div class="nav-title">
+                        <p>The Scalable Business Model Design</p>
+                    </div>
+                    <ul>
+                        <li>
+                            마켓 인사이트
+                        </li>
+                        <li>
+                            고객/문제 정의
+                        </li>
+                        <li>
+                            기존 대안 분석
+                        </li>
+                        <li>
+                            해결안
+                        </li>
+                        <li>
+                            가치 선정
+                        </li>
+                        <li>
+                            핵심 자원
+                        </li>
+                        <li>
+                            핵심 파트너
+                        </li>
+                        <li>
+                            핵심 활동
+                        </li>
+                        <li>
+                            수익모델
+                        </li>
+                        <li>
+                            고객 경험 설계
+                        </li>
+                        <li>
+                            피드백
+                        </li>
+                    </ul>
+                    <div class="empty-box"></div>
+                </nav>
+            </div>
+        </div>
+        <div class="content-section-number">
+            <img src="./img/section-01/title-01.png" alt="">
+        </div>
+        <div class="content-container">
+            <div class="content-header">
+                <div class="content-header-right">
+                    <div class="bmds-logo">
+                        <img src="./img/common/img_logo.png" alt="">
+                    </div>
+                    <p class="content-section-en-title">Market Insight</p>
+                    <p class="content-section-title">1&#41; 시장정의</p>
+                    <div class="description">
+                        <p>제품(서비스)의 시장에 대해 간략히 서술하고, 해당 시장의 시장 규모와 시장의 성장성을 파악합니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======== content start ======== -->
+            <div class="content-wrapper">
+                <div class="market-fit-wrapper">
+                    <div class="market-fit-box">
+                        <div class="market-fit-title common-title-box">
+                            <p>시장 적합성 분석</p>
+                        </div>
+                        <div class="market-fit-calculation">
+                            A = 기술 적합도 가중치<br />B = 사용 적합도 가중치 = (1-A)
+                            <br />
+                            <br />
+                            <img src="./img/section-05/calc_5-2-2.png" alt="">
+                        </div>
+                        <div class="market-fit-bar-box">
+                            <div class="market-fit-bar-title">
+                                <span>기술적합도</span>
+                            </div>
+                            <div class="market-fit-bar-container">
+                                <div class="market-fit-bar">
+                                    <div class="market-fit-bar-data data01">
+                                        <small>52.5</small>
+                                        <small>45.0</small>
+                                    </div>
+                                </div>
+                                <div class="market-fit-bar-num">
+                                    <small>0</small>
+                                    <small>100</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="market-fit-bar-box">
+                            <div class="market-fit-bar-title">
+                                <span>사용적합도</span>
+                            </div>
+                            <div class="market-fit-bar-container">
+                                <div class="market-fit-bar">
+                                    <div class="market-fit-bar-data data02">
+                                        <small>52.5</small>
+                                        <small>45.0</small>
+                                    </div>
+                                </div>
+                                <div class="market-fit-bar-num">
+                                    <small>0</small>
+                                    <small>100</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="market-fit-bar-box">
+                            <div class="market-fit-bar-title">
+                                <span>시장적합도</span>
+                            </div>
+                            <div class="market-fit-bar-container">
+                                <div class="market-fit-bar">
+                                    <div class="market-fit-bar-data data03">
+                                        <small>52.5</small>
+                                        <small>45.0</small>
+                                    </div>
+                                </div>
+                                <div class="market-fit-bar-num">
+                                    <small>0</small>
+                                    <small>100</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="market-fit-box">
+                        <div class="market-fit-title common-title-box">
+                            <p>시장 적합성 분석</p>
+                        </div>
+                        <table class="market-fit-table table-checkbox">
+                            <thead>
+                                <th style="width: 30%;">시장 적합도(M.F)</th>
+                                <th style="width: 20%;">시장 매력도</th>
+                                <th>대응 전략</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>80 < M.F ≤ 100</td>
+                                    <td>Very High</td>
+                                    <td>높은 시장 매력도를 가지고 있어 제품/서비스 양산화 및 판로 구축으로 적극적인 시장 공략</td>
+                                </tr>
+
+
+                                <!-- 후에 조건문으로 background 추가 -->
+                                <tr style="background: rgb(227, 227, 253);">
+                                    <td>60 < M.F ≤ 80</td>
+                                    <td>High</td>
+                                    <td>적절한 시장 매력도를 가지고 있으나 제품/서비스에 대한 추가 투자(기능, 성능, 디자인 보완)를 통한 선별적인 전략 추진</td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>40 < M.F ≤ 60</td>
+                                    <td>Medium</td>
+                                    <td>중간 수준의 시장 매력도를 가지고 있어 기존 제품/서비스의 수익을 최대화하거나 신규 제품/서비스에 대한 대대적인 개선이나 보완 또는 피보팅이 필요</td>
+                                </tr>
+                                <tr>
+                                    <td>20 < M.F ≤ 40</td>
+                                    <td>Low</td>
+                                    <td>낮은 시장 매력도를 가지고 있어 무빙타깃이나 다른 시장으로의 전환을 고려하거나 필요할 경우 시장 철수도 충분히 고려</td>
+                                </tr>
+                                <tr>
+                                    <td>0 ≤ M.F ≤ 20</td>
+                                    <td>Very Low</td>
+                                    <td>매우 낮은 시장 매력도에서는 손실 최소화와 시장 철수를 적극적으로 고려</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- ======== content end ======== -->
+        </div>
+    </div>
+</body>
+
+</html>
