@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/content-container.css">
+    <link rel="stylesheet" href="./css/snb.css">
+    <!-- <link rel="stylesheet" href="./css/checkbox.css"> -->
+    <link rel="stylesheet" href="./css/table.css">
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+</head>
+
+<style>
+    .plan-secu-nece-reso {
+        margin-top: 20px;
+    }
+
+    .plan-secu-nece-reso thead th {
+        padding: 5px 0;
+    }
+
+    .plan-secu-nece-reso input[type="text"] {
+        width: 100%;
+        outline: none;
+        border: none;
+    }
+
+    .plan-secu-nece-reso input[type="checkbox"] {
+        display: none;
+    }
+
+    .plan-secu-nece-reso input + label {
+        cursor: pointer;
+    }
+
+    .plan-secu-nece-reso input + label::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        background: #c179bf1a;
+        border-radius: 50%;
+        vertical-align: middle;
+    }
+
+    .plan-secu-nece-reso input:checked + label::before {
+        background: #C179BE;
+    }
+
+    .cor-res-sta {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .cor-res-sta-icon,
+    .plan-secu-nece-reso tr td {
+        text-align: center;
+    }
+    
+    .cor-res-sta-desc-wrapper {
+        display: flex;
+        position: relative;
+        margin-top: 20px;
+    }
+
+    .cor-res-sta-desc-box {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        width: 100%;
+        height: 120px;
+    }
+
+    .cor-res-sta-desc-box textarea {
+        width: 100%;
+        height: 100%;
+        resize: none;
+        border: none;
+        outline: none;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    
+    .cor-res-sta-desc-cir {
+        border-radius: 50%;
+        border: 2px solid #fff;
+        background: #C179BE;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 130px;
+        height: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-shadow: 5px 5px 5px rgba(0,0,0,.2);
+    }
+    
+    .left {
+        background: #ECE2EE;
+        border-radius: 60px 0 0 60px;
+        padding-left: 50px;
+    }
+    .right {
+        background: #E7E6E6;
+        border-radius: 0 60px 60px 0;
+        padding-right: 50px;
+    }
+</style>
+
+<body>
+    <div class="bmds-container">
+        <div class="section-nav-bar">
+            <div class="nav-title-box">
+                <nav>
+                    <div class="nav-title">
+                        <p>The Scalable Business Model Design</p>
+                    </div>
+                    <ul>
+                        <li>
+                            마켓 인사이트
+                        </li>
+                        <li>
+                            고객/문제 정의
+                        </li>
+                        <li>
+                            기존 대안 분석
+                        </li>
+                        <li>
+                            해결안
+                        </li>
+                        <li>
+                            가치 선정
+                        </li>
+                        <li>
+                            핵심 자원
+                        </li>
+                        <li>
+                            핵심 파트너
+                        </li>
+                        <li>
+                            핵심 활동
+                        </li>
+                        <li>
+                            수익모델
+                        </li>
+                        <li>
+                            고객 경험 설계
+                        </li>
+                        <li>
+                            피드백
+                        </li>
+                    </ul>
+                    <div class="empty-box"></div>
+                </nav>
+            </div>
+        </div>
+        <div class="content-section-number">
+            <img src="./img/section-01/title-01.png" alt="">
+        </div>
+        <div class="content-container">
+            <div class="content-header">
+                <div class="content-header-right">
+                    <div class="bmds-logo">
+                        <img src="./img/common/img_logo.png" alt="">
+                    </div>
+                    <p class="content-section-en-title">Market Insight</p>
+                    <p class="content-section-title">1&#41; 시장정의</p>
+                    <div class="description">
+                        <p>제품(서비스)의 시장에 대해 간략히 서술하고, 해당 시장의 시장 규모와 시장의 성장성을 파악합니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======== content start ======== -->
+            <div class="content-wrapper">
+                <table class="plan-secu-nece-reso table-checkbox">
+                    <thead>
+                        <tr>
+                            <th rowspan="2">구분</th>
+                            <th style="width: 35%;" rowspan="2">확보방안</th>
+                            <th colspan="12">추진일정</th>
+                        </tr>
+                        <tr>
+                            <th colspan="3">1/4</th>
+                            <th colspan="3">2/4</th>
+                            <th colspan="3">3/4</th>
+                            <th colspan="3">4/4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <!-- ========= 팀원 start =========  -->
+                        <tr>
+                            <td rowspan="3">팀원</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td>
+                                <input type="checkbox" id="firstLinePlanOneOne" name="plan">
+                                <label for="firstLinePlanOneOne"></label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="firstLinePlanOneTwo" name="plan">
+                                <label for="firstLinePlanOneTwo"></label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="firstLinePlanOneThree" name="plan">
+                                <label for="firstLinePlanOneThree"></label>
+                            </td>
+
+
+                            <td>
+                                <input type="checkbox" id="firstLinePlanTwoOne" name="plan">
+                                <label for="firstLinePlanTwoOne"></label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="firstLinePlanTwoTwo" name="plan">
+                                <label for="firstLinePlanTwoTwo"></label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="firstLinePlanTwoThree" name="plan">
+                                <label for="firstLinePlanTwoThree"></label>
+                            </td>
+
+
+                            <td>
+                                <input type="checkbox" id="firstLinePlanThreeOne" name="plan">
+                                <label for="firstLinePlanThreeOne"></label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="firstLinePlanThreeTwo" name="plan">
+                                <label for="firstLinePlanThreeTwo"></label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="firstLinePlanThreeThree" name="plan">
+                                <label for="firstLinePlanThreeThree"></label>
+                            </td>
+
+
+                            <td>
+                                <input type="checkbox" id="firstLinePlanFourOne" name="plan">
+                                <label for="firstLinePlanFourOne"></label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="firstLinePlanFourTwo" name="plan">
+                                <label for="firstLinePlanFourTwo"></label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="firstLinePlanFourThree" name="plan">
+                                <label for="firstLinePlanFourThree"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                            <td>
+                                <input type="checkbox" id="secLinePlanOneOne" name="plan">
+                                <label for="secLinePlanOneOne"></label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="secLinePlanOneTwo" name="plan">
+                                <label for="secLinePlanOneTwo"></label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="secLinePlanOneThree" name="plan">
+                                <label for="secLinePlanOneThree"></label>
+                            </td>
+
+
+                            <td>
+                                <input type="checkbox" id="secLinePlanTwoOne" name="plan">
+                                <label for="secLinePlanTwoOne"></label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="secLinePlanTwoTwo" name="plan">
+                                <label for="secLinePlanTwoTwo"></label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="secLinePlanTwoThree" name="plan">
+                                <label for="secLinePlanTwoThree"></label>
+                            </td>
+
+
+                            <td>
+                                <input type="checkbox" id="secLinePlanThreeOne" name="plan">
+                                <label for="secLinePlanThreeOne"></label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="secLinePlanThreeTwo" name="plan">
+                                <label for="secLinePlanThreeTwo"></label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="secLinePlanThreeThree" name="plan">
+                                <label for="secLinePlanThreeThree"></label>
+                            </td>
+
+
+                            <td>
+                                <input type="checkbox" id="secLinePlanFourOne" name="plan">
+                                <label for="secLinePlanFourOne"></label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="secLinePlanFourTwo" name="plan">
+                                <label for="secLinePlanFourTwo"></label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="secLinePlanFourThree" name="plan">
+                                <label for="secLinePlanFourThree"></label>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                            <td>
+                                <input type="checkbox" id="thirdLinePlanOneOne" name="plan">
+                                <label for="thirdLinePlanOneOne"></label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="thirdLinePlanOneTwo" name="plan">
+                                <label for="thirdLinePlanOneTwo"></label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="thirdLinePlanOneThree" name="plan">
+                                <label for="thirdLinePlanOneThree"></label>
+                            </td>
+
+                            <td>
+                                <input type="checkbox" id="thirdLinePlanTwoOne" name="plan">
+                                <label for="thirdLinePlanTwoOne"></label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="thirdLinePlanTwoTwo" name="plan">
+                                <label for="thirdLinePlanTwoTwo"></label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="thirdLinePlanTwoThree" name="plan">
+                                <label for="thirdLinePlanTwoThree"></label>
+                            </td>
+
+                            <td>
+                                <input type="checkbox" id="thirdLinePlanThreeOne" name="plan">
+                                <label for="thirdLinePlanThreeOne"></label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="thirdLinePlanThreeTwo" name="plan">
+                                <label for="thirdLinePlanThreeTwo"></label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="thirdLinePlanThreeThree" name="plan">
+                                <label for="thirdLinePlanThreeThree"></label>
+                            </td>
+
+                            <td>
+                                <input type="checkbox" id="thirdLinePlanFourOne" name="plan">
+                                <label for="thirdLinePlanFourOne"></label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="thirdLinePlanFourTwo" name="plan">
+                                <label for="thirdLinePlanFourTwo"></label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="thirdLinePlanFourThree" name="plan">
+                                <label for="thirdLinePlanFourThree"></label>
+                            </td>
+                        </tr>
+                        <!-- ========= 팀원 end =========  -->
+
+                    </tbody>
+                </table>
+            </div>
+            <!-- ======== content end ======== -->
+
+        </div>
+    </div>
+</body>
+
+</html>

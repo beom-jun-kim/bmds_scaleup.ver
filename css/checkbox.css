@@ -32,6 +32,8 @@ input[type="checkbox"] + label::before {
   vertical-align: text-top;
 }
 
+
+
 /* num */
 input[type="radio"].num-input05 + label::before {
   content: "5";
