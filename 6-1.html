@@ -21,21 +21,57 @@
     }
     .cor-res-sta-desc-wrapper {
         display: flex;
+        position: relative;
+        margin-top: 20px;
     }
 
     .cor-res-sta-desc-box {
-        background: sandybrown;
         padding-bottom: 10px;
         padding-top: 10px;
+        width: 100%;
+        height: 120px;
+    }
+
+    .cor-res-sta-desc-box textarea {
+        width: 100%;
+        height: 100%;
+        resize: none;
+        border: none;
+        outline: none;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    
+    .cor-res-sta-desc-cir {
+        border-radius: 50%;
+        border: 2px solid #fff;
+        background: #C179BE;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 130px;
+        height: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-shadow: 5px 5px 5px rgba(0,0,0,.2);
     }
     
     .left {
-        border-radius: 30px 0 0 30px;
-        padding-left: 20px;
+        background: #ECE2EE;
+        border-radius: 60px 0 0 60px;
+        padding-left: 50px;
     }
     .right {
-        border-radius: 0 30px 30px 0;
-        padding-right: 20px;
+        background: #E7E6E6;
+        border-radius: 0 60px 60px 0;
+        padding-right: 50px;
     }
 </style>
 
@@ -121,6 +157,24 @@
                         <div class="cor-res-sta-icon-text">
                             <p>약점(필요자원)</p>
                         </div>
+                    </div>
+                </div>
+                <div class="cor-res-sta-desc-wrapper">
+                    <div class="cor-res-sta-desc-box left">
+                        <textarea></textarea>
+                    </div>
+                    <div class="cor-res-sta-desc-cir">팀빌딩</div>
+                    <div class="cor-res-sta-desc-box right">
+                        <textarea></textarea>
+                    </div>
+                </div>
+                <div class="cor-res-sta-desc-wrapper">
+                    <div class="cor-res-sta-desc-box left">
+                        <textarea></textarea>
+                    </div>
+                    <div class="cor-res-sta-desc-cir">핵심보유기술<br />및 노하우</div>
+                    <div class="cor-res-sta-desc-box right">
+                        <textarea></textarea>
                     </div>
                 </div>
                 <div class="cor-res-sta-desc-wrapper">
